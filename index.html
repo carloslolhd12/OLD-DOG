@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Old Dog — Botas en cuero · Moda urbana</title>
+<meta property="og:title" content="Old Dog — Botas en cuero">
+<meta property="og:description" content="Especialistas en cuero. Moda urbana, vintage style, diseño y producción.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Yellowtail&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<script>
+var EXTS = ['png','jpg','jpeg','webp','PNG','JPG','JPEG'];
+function nextExt(el){
+  var i = (+el.dataset.i||0) + 1;
+  if(el.dataset.base && i < EXTS.length){ el.dataset.i = i; el.src = el.dataset.base + '.' + EXTS[i]; return; }
+  el.style.display='none'; el.nextElementSibling.style.display='grid';
+}
+</script>
+<style>
+:root{
+  --cuero:#1A1517; --cuero2:#2A2225; --cafe:#1A1517; --miel:#8A7400; --oro:#FFE600; --oro2:#FFEE4D;
+  --papel:#F4F0E4; --papel2:#E9E3CF; --card:#FCFAF3; --linea:#D9D2BA; --tinta:#1A1517; --muted:#6F675A;
+  --wa:#25D366; --wa2:#128C7E;
+}
+*{font-synthesis:none;box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:#1b110a;color:var(--tinta);font-family:'Barlow',sans-serif;display:flex;justify-content:center}
+.app{width:100%;max-width:480px;min-height:100vh;position:relative;padding-bottom:140px;overflow-x:hidden;background-color:var(--papel);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  box-shadow:0 0 60px rgba(0,0,0,.5)}
+h1,h2,h3,.serif{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.5px}
+h1 em,h2 em{font-family:'Yellowtail',cursive;font-weight:400;font-style:normal;text-transform:none;letter-spacing:0}
+.script{font-family:'Yellowtail',cursive}
+.stamp{font-family:'Barlow Condensed',sans-serif;letter-spacing:2px;text-transform:uppercase}
+button{font-family:inherit;cursor:pointer;border:none}
+a{text-decoration:none;color:inherit}
+
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:6px;font-family:'Barlow Condensed',sans-serif;letter-spacing:1.5px;text-transform:uppercase;font-size:12.5px;transition:transform .15s}
+.btn:active{transform:scale(.96)}
+.btn-oro{background:linear-gradient(180deg,var(--oro2),var(--oro));color:var(--cuero);box-shadow:0 4px 0 #000,0 8px 18px rgba(0,0,0,.3)}
+.btn-line{background:transparent;color:var(--papel);border:1.5px solid var(--oro)}
+.btn-wa{background:linear-gradient(135deg,var(--wa2),var(--wa));color:#fff;box-shadow:0 8px 20px rgba(37,211,102,.28)}
+
+/* ───── HERO ───── */
+.hero{background:linear-gradient(180deg,#241d20 0%,var(--cuero) 70%);color:var(--papel);padding:26px 22px 70px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;right:-74px;top:196px;width:236px;height:236px;border-radius:50%;background:var(--oro);z-index:0}
+.hero::before{z-index:3;content:'';position:absolute;inset:10px;border:2px dashed rgba(255,230,0,.5);border-radius:14px;pointer-events:none}
+.hero-boot{position:absolute;right:6px;top:228px;width:132px;opacity:.95;transform:rotate(6deg);z-index:1;filter:drop-shadow(0 18px 22px rgba(0,0,0,.5))}
+.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:4;padding:6px 6px 0}
+.logo-box{display:grid;place-items:center}
+.logo-img{height:58px;width:auto;max-width:150px;object-fit:contain;display:block}
+.wordmark{font-family:'Anton';font-size:38px;line-height:.9;color:var(--oro);letter-spacing:1px;place-items:center;position:relative}
+.wordmark span{color:var(--oro)}
+.wordmark sup{font-family:'Barlow';font-size:9px;position:absolute;right:-12px;top:2px;color:var(--oro)}
+.brand-tag{display:flex;flex-direction:column;line-height:1.1}
+.brand-tag .script{font-size:21px;color:#fff}
+.brand-tag small{font-family:'Barlow Condensed';font-size:10px;letter-spacing:1.5px;color:var(--oro);margin-top:3px;font-weight:600}
+.hero h1{font-size:44px;line-height:1.0;font-weight:400;color:#fff;margin-top:62px;position:relative;z-index:2;padding:0 6px;max-width:300px}
+.hero h1 em{color:var(--oro);font-size:1.25em;line-height:.9}
+.hero p.sub{margin-top:14px;font-size:14px;line-height:1.65;color:rgba(244,240,228,.8);max-width:215px;position:relative;z-index:2;padding:0 6px}
+.hero-cta{display:flex;gap:10px;margin-top:24px;position:relative;z-index:2;flex-wrap:wrap;padding:0 6px}
+.seal{position:absolute;top:112px;right:18px;width:72px;height:72px;border-radius:50%;background:var(--oro);display:grid;place-items:center;text-align:center;font-family:'Anton';font-size:13px;letter-spacing:1px;line-height:1.05;color:var(--cuero);transform:rotate(12deg);z-index:4;box-shadow:0 0 0 3px var(--cuero),0 0 0 5px var(--oro)}
+
+/* tira de valores */
+.vals{margin:-34px 16px 0;position:relative;z-index:5;background:var(--card);border-radius:12px;border:1px solid var(--linea);display:grid;grid-template-columns:repeat(3,1fr);padding:16px 6px;box-shadow:0 12px 30px rgba(42,26,16,.18)}
+.val{text-align:center;padding:0 6px;border-right:1px dashed var(--linea)}
+.val:last-child{border:none}
+.val span{font-size:22px;display:block}
+.val b{display:block;font-family:'Anton';font-size:12.5px;margin-top:4px;line-height:1.15}
+.val small{font-size:10px;color:var(--muted);line-height:1.3;display:block;margin-top:2px}
+
+/* secciones */
+.sec{padding:38px 16px 0}
+.eyebrow{font-family:'Barlow Condensed';font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--miel);display:flex;align-items:center;gap:10px}
+.eyebrow::after{content:'';flex:1;height:0;border-top:1.5px dashed var(--linea)}
+.sec h2{font-size:36px;font-weight:400;margin-top:6px;line-height:1.02}
+.sec h2 em{color:var(--cuero);font-size:1.2em;background:linear-gradient(transparent 58%,var(--oro) 58%);padding:0 6px}
+.sec p.lead{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.65}
+
+/* filtros */
+.filters{display:flex;gap:8px;overflow-x:auto;padding:16px 16px 6px;margin:0 -16px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.f{flex-shrink:0;padding:9px 16px;border-radius:4px;background:var(--card);border:1.5px solid var(--linea);font-family:'Barlow Condensed';letter-spacing:1px;font-size:11.5px;text-transform:uppercase;color:var(--tinta);transition:.2s}
+.f.on{background:var(--cuero);color:var(--oro2);border-color:var(--cuero)}
+
+/* productos */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.prod{background:var(--card);border-radius:10px;border:1px solid var(--linea);overflow:hidden;display:flex;flex-direction:column;cursor:pointer;animation:pop .35s both;position:relative}
+.prod::after{content:'';position:absolute;inset:5px;border:1px dashed rgba(107,62,31,.28);border-radius:7px;pointer-events:none}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.prod-img{height:150px;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#fff6e2,#E8DAC0)}
+.m-img{width:100%;height:100%;object-fit:cover;display:block}
+.m-fb{display:grid;place-items:center;width:100%;height:100%}
+.m-fb svg{width:104px;height:auto;filter:drop-shadow(0 8px 8px rgba(42,26,16,.35))}
+.tag{position:absolute;top:10px;left:10px;background:var(--cuero);color:var(--oro2);font-family:'Barlow Condensed';font-size:9px;letter-spacing:1.5px;padding:3px 8px;border-radius:3px;text-transform:uppercase;z-index:2}
+.dots{position:absolute;left:10px;bottom:9px;display:flex;gap:4px;z-index:2}
+.dots i{width:11px;height:11px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(42,26,16,.25)}
+.prod-body{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1}
+.prod-cat{font-family:'Barlow Condensed';font-size:9.5px;letter-spacing:2px;color:var(--miel);text-transform:uppercase}
+.prod-name{font-family:'Anton';text-transform:uppercase;font-weight:400;font-size:16px;letter-spacing:.4px;line-height:1.15;margin-top:3px;min-height:36px}
+.prod-sub{font-size:11px;color:var(--muted);margin-top:4px}
+.price{font-family:'Anton';font-weight:400;font-size:16px;margin-top:6px}
+.pick{margin-top:10px;background:var(--cuero);color:var(--oro2);font-family:'Barlow Condensed';letter-spacing:1px;text-transform:uppercase;font-size:10.5px;padding:10px;border-radius:5px;width:100%}
+.empty{grid-column:1/-1;text-align:center;padding:40px 10px;color:var(--muted);font-size:13px}
+
+/* ───── A LA MEDIDA ───── */
+.made{margin-top:44px;background:radial-gradient(120% 90% at 10% 0%,#4b2f1b,var(--cuero) 65%);color:var(--papel);padding:46px 16px 40px;position:relative;overflow:hidden}
+.made::before{content:'';position:absolute;inset:10px;border:2px dashed rgba(255,230,0,.4);border-radius:14px;pointer-events:none}
+.made .eyebrow{color:var(--oro)}
+.made .eyebrow::after{border-color:rgba(255,230,0,.35)}
+.made h2{color:#fff}
+.made h2 em{color:var(--oro);font-size:1.2em;background:none}
+.made p.lead{color:rgba(244,240,228,.75)}
+.steps{margin-top:22px;display:grid;gap:12px;counter-reset:s}
+.step{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,230,0,.25);border-radius:10px;padding:14px;counter-increment:s}
+.step::before{content:counter(s);font-family:'Anton';font-weight:400;font-size:20px;width:38px;height:38px;border-radius:50%;background:var(--oro);color:var(--cuero);display:grid;place-items:center;flex-shrink:0}
+.step b{font-family:'Anton';font-size:15px;display:block}
+.step small{font-size:12px;color:rgba(244,240,228,.7);line-height:1.5;display:block;margin-top:2px}
+.made .btn{width:100%;margin-top:22px;padding:16px}
+
+/* ───── CONTACTO ───── */
+.contact{padding:38px 16px 24px}
+.wa-card{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--wa2),var(--wa));color:#fff;padding:20px;border-radius:12px;margin-top:16px;box-shadow:0 12px 28px rgba(37,211,102,.28)}
+.wa-card .ic{font-size:38px}
+.wa-card b{font-family:'Anton';font-size:19px;display:block}
+.wa-card small{font-size:12px;opacity:.9}
+.wa-card.ig{background:var(--cuero);color:var(--oro);box-shadow:none;margin-top:10px;padding:14px 20px;border:1.5px solid var(--oro)}
+.wa-card.ig .ic{font-size:30px}
+.wa-card.ig b{color:var(--oro)}
+.info{margin-top:12px;background:var(--card);border:1px solid var(--linea);border-radius:12px;padding:4px 16px}
+.info div{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px dashed var(--linea);font-size:13.5px}
+.info div:last-child{border:none}
+.info span{font-size:18px}
+.info small{display:block;color:var(--muted);font-size:11.5px;margin-top:1px}
+.footer{background:var(--cuero);color:var(--papel);text-align:center;padding:34px 20px 30px;margin-top:10px;position:relative}
+.footer .brand{justify-content:center}
+.footer .tag2{font-family:'Barlow Condensed';font-size:11px;letter-spacing:2px;color:var(--oro);margin-top:14px;text-transform:uppercase}
+.footer .tel{font-size:12px;color:rgba(244,240,228,.55);margin-top:8px}
+
+/* ───── BARRAS FIJAS ───── */
+.cartbar{position:fixed;bottom:74px;left:50%;transform:translate(-50%,120px);width:calc(100% - 28px);max-width:452px;background:var(--cuero);color:var(--papel);border:1.5px solid var(--oro);border-radius:10px;padding:11px 12px 11px 16px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 14px 34px rgba(0,0,0,.45);transition:transform .35s cubic-bezier(.2,.9,.3,1.2);z-index:60}
+.cartbar.show{transform:translate(-50%,0)}
+.cb-info{cursor:pointer;flex:1}
+.cartbar small{font-family:'Barlow Condensed';font-size:9.5px;color:var(--oro);display:block;letter-spacing:2px;text-transform:uppercase}
+.cartbar b{font-family:'Anton';font-size:17px}
+.cartbar .btn{padding:11px 16px}
+.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;background:rgba(42,26,16,.97);backdrop-filter:blur(12px);border-top:1.5px solid var(--oro);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 6px calc(8px + env(safe-area-inset-bottom));z-index:70}
+.nav a{display:flex;flex-direction:column;align-items:center;gap:2px;font-family:'Barlow Condensed';font-size:10px;letter-spacing:1px;text-transform:uppercase;color:rgba(244,240,228,.55);padding:6px 0;border-radius:6px;transition:.2s}
+.nav a span{font-size:18px}
+.nav a.on{color:var(--oro2);background:rgba(255,230,0,.14)}
+
+/* ───── HOJA INFERIOR ───── */
+.ov{position:fixed;inset:0;background:rgba(20,10,4,.65);backdrop-filter:blur(3px);z-index:100;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.ov.open{opacity:1;pointer-events:auto}
+.sheet{width:100%;max-width:480px;max-height:92vh;overflow-y:auto;background-color:var(--papel);border-radius:22px 22px 0 0;position:relative;transform:translateY(40px);transition:transform .3s cubic-bezier(.2,.9,.3,1);padding-bottom:calc(18px + env(safe-area-inset-bottom));border-top:3px solid var(--oro)}
+.ov.open .sheet{transform:none}
+.grab{width:44px;height:5px;border-radius:3px;background:rgba(255,255,255,.5);position:absolute;left:50%;top:8px;transform:translateX(-50%);z-index:6}
+.x{position:absolute;top:12px;right:12px;z-index:6;width:36px;height:36px;border-radius:50%;background:rgba(251,245,232,.96);box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:14px;font-weight:700;color:var(--cuero)}
+.s-img{height:250px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,#fff6e2,#E0CFAE)}
+.s-img .m-fb svg{width:170px}
+.s-col{position:absolute;left:14px;bottom:12px;background:var(--card);border-radius:4px;padding:6px 12px 6px 8px;font-family:'Barlow Condensed';font-size:11.5px;letter-spacing:1px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.s-col i{width:15px;height:15px;border-radius:50%;border:1px solid rgba(0,0,0,.25);display:inline-block}
+.s-body{padding:18px 18px 4px}
+.s-name{font-size:30px;font-weight:400;line-height:1.05;margin-top:4px}
+.s-desc{font-size:13.5px;color:var(--muted);line-height:1.65;margin-top:8px}
+.feat{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.feat span{font-family:'Barlow Condensed';font-size:10.5px;letter-spacing:1px;padding:5px 10px;border:1px solid var(--linea);border-radius:3px;background:var(--card);color:var(--cafe)}
+.s-lbl{font-family:'Barlow Condensed';font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:22px;display:flex;justify-content:space-between}
+.s-lbl b{color:var(--tinta);letter-spacing:1px;font-weight:400}
+.swatches{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+.sw{width:40px;height:40px;border-radius:50%;border:2px solid rgba(42,26,16,.2);position:relative;transition:transform .15s}
+.sw:active{transform:scale(.9)}
+.sw.on{border-color:var(--cuero);box-shadow:0 0 0 3px var(--papel),0 0 0 5px var(--cuero);transform:scale(1.05)}
+.sw-custom{background:conic-gradient(#6B3E1F,#B5772F,#C9A66B,#1E1A17,#5A1F26,#6B3E1F);display:grid;place-items:center}
+.sw-custom span{width:22px;height:22px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:12px}
+.dot-custom{background:conic-gradient(#6B3E1F,#B5772F,#C9A66B,#1E1A17,#5A1F26,#6B3E1F)}
+.s-custom{margin-top:12px;background:#FFF6A8;border:1px dashed #8A7400;border-radius:8px;padding:12px 14px;font-size:12.5px;line-height:1.55;color:#3d3300}
+.tallas{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px}
+.t{background:var(--card);border:1.5px solid var(--linea);border-radius:6px;padding:11px 0;font-family:'Anton';font-weight:700;font-size:15px;color:var(--tinta);transition:.15s}
+.t.on{background:var(--cuero);color:var(--oro2);border-color:var(--cuero)}
+.s-hint{font-size:11.5px;color:var(--muted);margin-top:10px}
+.s-foot{display:flex;gap:10px;align-items:center;margin-top:22px}
+.qstep{display:flex;align-items:center;background:var(--card);border:1.5px solid var(--linea);border-radius:8px;padding:3px}
+.qstep button{width:36px;height:42px;background:none;font-size:20px;font-weight:700;color:var(--tinta)}
+.qstep b{min-width:24px;text-align:center;font-family:'Anton';font-size:17px}
+.add-btn{flex:1;padding:16px 10px}
+.c-title{font-family:'Anton';text-transform:uppercase;font-weight:400;font-size:30px;padding:34px 18px 8px}
+.c-list{padding:0 18px}
+.cl{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px dashed var(--linea)}
+.cl-dot{width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.2);flex-shrink:0}
+.cl-info{flex:1;min-width:0}
+.cl-info b{font-family:'Anton';font-size:14.5px;display:block}
+.cl-info small{font-size:11.5px;color:var(--muted)}
+.qty{display:flex;align-items:center;background:var(--card);border-radius:8px;border:1px solid var(--linea)}
+.qty button{background:none;width:28px;height:32px;font-size:16px;font-weight:700;color:var(--tinta)}
+.qty b{min-width:16px;text-align:center;font-size:13px}
+.cl-del{background:none;font-size:16px;padding:6px}
+.c-foot{padding:18px 18px 0}
+.fine{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5}
+.toast{position:fixed;left:50%;bottom:150px;transform:translate(-50%,20px);background:var(--cuero);color:var(--oro2);border:1px solid var(--oro);padding:11px 18px;border-radius:6px;font-family:'Barlow Condensed';letter-spacing:1px;font-size:12.5px;z-index:120;opacity:0;pointer-events:none;transition:.25s;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- ═════════ HERO ═════════ -->
+<header class="hero" id="inicio">
+  <div class="brand">
+    <div class="logo-box"><img class="logo-img" data-base="LOGO" data-i="0" src="LOGO.png" alt="Old Dog" onerror="nextExt(this)"><div class="wordmark" style="display:none">OLD<span>DOG</span><sup>®</sup></div></div>
+    <div class="brand-tag"><span class="script">Especialistas en cuero</span><small>VINTAGE STYLE · DISEÑO &amp; PRODUCCIÓN</small></div>
+  </div>
+  <div class="seal">MODA<br>URBANA</div>
+  <h1>Botas con <em>historia</em>, hechas para durar.</h1>
+  <p class="sub">Moda urbana en cuero con estilo vintage. Diseño y producción propia.</p>
+  <div class="hero-cta">
+    <a class="btn btn-oro" href="#botas">Ver botas</a>
+    <a class="btn btn-line" href="#medida">A tu medida</a>
+  </div>
+  <div class="hero-boot" id="heroBoot"></div>
+</header>
+
+<div class="vals">
+  <div class="val"><span>🐂</span><b>Cuero genuino</b><small>Materiales nobles</small></div>
+  <div class="val"><span>🧵</span><b>Vintage style</b><small>Acabados a mano</small></div>
+  <div class="val"><span>📐</span><b>Diseño y producción</b><small>A tu medida</small></div>
+</div>
+
+<!-- ═════════ CATÁLOGO ═════════ -->
+<section class="sec" id="botas">
+  <div class="eyebrow">Colección</div>
+  <h2>Nuestras <em>botas</em></h2>
+  <p class="lead">Toca una bota, elige el <b>color del cuero</b> y tu <b>talla</b>, y arma tu pedido para enviarlo por WhatsApp.</p>
+  <div class="filters" id="cats"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- ═════════ A LA MEDIDA ═════════ -->
+<section class="made" id="medida">
+  <div class="eyebrow">Diseño y producción</div>
+  <h2>Tu diseño, <em>en cuero</em></h2>
+  <p class="lead">¿Tienes una idea o una referencia? La diseñamos y la producimos para ti, con el cuero y los acabados que elijas.</p>
+  <div class="steps">
+    <div class="step"><div><b>Cuéntanos tu idea</b><small>Envíanos una foto, referencia o dibujo de la bota que imaginas.</small></div></div>
+    <div class="step"><div><b>Elegimos cuero y acabados</b><small>Color, tipo de cuero, costuras, suela y detalles vintage.</small></div></div>
+    <div class="step"><div><b>La producimos</b><small>Fabricación artesanal con la talla exacta de tu pie.</small></div></div>
+    <div class="step"><div><b>La recibes</b><small>Lista para estrenar y acompañarte por años.</small></div></div>
+  </div>
+  <a class="btn btn-oro" id="waMedida" target="_blank" rel="noopener">📲 Quiero mi diseño</a>
+</section>
+
+<!-- ═════════ CONTACTO ═════════ -->
+<section class="contact" id="contacto">
+  <div class="eyebrow">Contáctanos</div>
+  <h2 class="serif" style="font-size:36px;margin-top:6px;line-height:1.02">Hablemos de tus <em style="color:var(--cuero);font-size:1.2em;background:linear-gradient(transparent 58%,var(--oro) 58%);padding:0 6px">botas</em></h2>
+  <a class="wa-card" id="waMain" target="_blank" rel="noopener">
+    <span class="ic">📲</span>
+    <div><b>Escríbenos por WhatsApp</b><small>302 217 8285 · Respuesta rápida</small></div>
+  </a>
+  <a class="wa-card ig" href="https://www.instagram.com/the_old_dog" target="_blank" rel="noopener">
+    <span class="ic">📸</span>
+    <div><b>@the_old_dog</b><small>Síguenos en Instagram</small></div>
+  </a>
+  <div class="info">
+    <div><span>✉️</span><div><a href="mailto:olddogstyle@gmail.com" style="text-decoration:underline">olddogstyle@gmail.com</a><small>Escríbenos por correo</small></div></div>
+    <div><span>🧵</span><div>Cuero vintage<small>Especialistas en cuero, diseño y producción</small></div></div>
+    <div><span>📐</span><div>Hecho a tu medida<small>Cuéntanos tu idea y la hacemos realidad</small></div></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="brand" style="justify-content:center"><div class="logo-box"><img class="logo-img" data-base="LOGO" data-i="0" src="LOGO.png" alt="Old Dog" onerror="nextExt(this)"><div class="wordmark" style="display:none">OLD<span>DOG</span><sup>®</sup></div></div></div>
+  <div class="tag2">Especialistas en cuero · Moda urbana</div>
+  <div class="tel">302 217 8285 · @the_old_dog</div>
+</footer>
+
+</div>
+
+<!-- barra pedido -->
+<div class="cartbar" id="cartbar">
+  <div class="cb-info" onclick="abrirCarrito()"><small>Mi pedido</small><b id="cartCount">0 pares</b></div>
+  <a class="btn btn-wa" id="cartSend" target="_blank" rel="noopener">Enviar 📲</a>
+</div>
+
+<div class="ov" id="ov"><div class="sheet" id="sheet"></div></div>
+<div class="toast" id="toast"></div>
+
+<nav class="nav" id="nav">
+  <a href="#inicio" class="on"><span>🏠</span>Inicio</a>
+  <a href="#botas"><span>🥾</span>Botas</a>
+  <a href="#medida"><span>📐</span>A medida</a>
+  <a href="#contacto"><span>💬</span>Contacto</a>
+</nav>
+
+<script>
+/* ════════════════════════════════════════════
+   ⚙️ CONFIGURACIÓN — EDITA AQUÍ
+════════════════════════════════════════════ */
+const CONFIG = {
+  whatsapp: '573022178285',     // con 57, sin + ni espacios
+  negocio: 'Old Dog',
+  mostrarPrecios: false         // pon true y agrega "precio:" a cada bota para mostrarlo
+};
+
+/* colores de cuero */
+const CUEROS = {
+  tabaco:   {n:'Café tabaco', h:'#6B3E1F'},
+  miel:     {n:'Miel',        h:'#B5772F'},
+  chocolate:{n:'Chocolate',   h:'#3B2416'},
+  negro:    {n:'Negro',       h:'#1E1A17'},
+  vino:     {n:'Vino',        h:'#5A1F26'},
+  arena:    {n:'Arena',       h:'#C9A66B'}
+};
+const OTRO = {n:'Otro color', custom:true};
+
+const TALLAS_H = ['38','39','40','41','42','43','44','45'];
+const TALLAS_M = ['34','35','36','37','38','39','40','41'];
+
+const CATEGORIAS = ['Todas','Hombre','Mujer','Botines','Altas','Trabajo'];
+
+/* ════════════════════════════════════════════
+   📦 BOTAS  (datos de ejemplo: reemplazar por los reales)
+   - cats:    categorías donde aparece
+   - alto:    14 = caña alta · 52 = media · 84 = botín
+   - cueros:  colores disponibles (claves de CUEROS)
+   - tallas:  lista de tallas
+   - img:     foto, ej. 'BOTA_VINTAGE' (misma carpeta que index.html; acepta png, jpg, jpeg, webp)
+════════════════════════════════════════════ */
+const PRODUCTOS = [
+  {nombre:'Bota Vintage Clásica', cats:['Hombre','Altas'], alto:34, tag:'Más pedida', cueros:['tabaco','miel','negro','chocolate'], tallas:TALLAS_H, img:'BOTA_VINTAGE_CLASICA',
+   desc:'Nuestra bota insignia: cuero curtido con acabado envejecido, costuras reforzadas y suela resistente. Mejora con el tiempo.', feat:['Cuero genuino','Acabado vintage','Costura reforzada']},
+  {nombre:'Bota Texana', cats:['Hombre','Mujer','Altas'], alto:14, cueros:['tabaco','miel','negro','vino'], tallas:TALLAS_H, img:'BOTA_TEXANA',
+   desc:'Caña alta con bordados y punta fina. Estilo texano con carácter, para destacar en cualquier plan.', feat:['Caña alta','Bordado a mano','Punta fina']},
+  {nombre:'Botín Chelsea', cats:['Hombre','Mujer','Botines'], alto:84, tag:'Urbana', cueros:['tabaco','negro','chocolate','arena'], tallas:TALLAS_H, img:'BOTIN_CHELSEA',
+   desc:'Botín elástico lateral, cómodo y elegante. Va igual de bien con jeans que con pantalón de vestir.', feat:['Elástico lateral','Suela flexible','Todo el día']},
+  {nombre:'Bota de Trabajo Engrasada', cats:['Hombre','Trabajo'], alto:52, cueros:['tabaco','chocolate','negro'], tallas:TALLAS_H, img:'BOTA_TRABAJO',
+   desc:'Cuero engrasado resistente al agua y al uso diario. Pensada para durar en obra, campo o ciudad.', feat:['Cuero engrasado','Suela antideslizante','Muy resistente']},
+  {nombre:'Botín Mujer con Taco', cats:['Mujer','Botines'], alto:84, tag:'Nuevo', cueros:['negro','vino','tabaco','arena'], tallas:TALLAS_M, img:'BOTIN_MUJER_TACO',
+   desc:'Botín con taco medio y líneas limpias. Cuero suave que se adapta al pie desde el primer día.', feat:['Taco medio','Cuero suave','Cierre lateral']},
+  {nombre:'Bota Vaquera Larga', cats:['Mujer','Altas'], alto:14, cueros:['tabaco','miel','negro','vino'], tallas:TALLAS_M, img:'BOTA_VAQUERA_LARGA',
+   desc:'Caña larga con detalles vintage en la costura. Una bota con personalidad, hecha a mano.', feat:['Caña larga','Detalles vintage','Hecha a mano']},
+  {nombre:'Bota Biker', cats:['Hombre','Mujer','Altas'], alto:34, cueros:['negro','chocolate','tabaco'], tallas:TALLAS_H, img:'BOTA_BIKER',
+   desc:'Estilo motero con hebillas metálicas y cuero grueso. Firme, rebelde y con mucha actitud.', feat:['Hebillas metálicas','Cuero grueso','Estilo motero']},
+  {nombre:'Botín Casual Vintage', cats:['Hombre','Mujer','Botines'], alto:76, cueros:['tabaco','miel','arena','chocolate'], tallas:TALLAS_H, img:'BOTIN_CASUAL',
+   desc:'Botín cordonado de uso diario con look retro. Cómodo, versátil y fácil de combinar.', feat:['Cordones','Look retro','Uso diario']}
+].map((p,i)=>({id:i,...p}));
+
+/* ════════════════════════════════════════════ */
+const $ = s => document.querySelector(s);
+const cop = n => '$' + Math.round(n).toLocaleString('es-CO');
+const waLink = txt => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt)}`;
+
+$('#waMain').href = waLink(`Hola! Vi el catálogo de ${CONFIG.negocio} y quiero información 🥾`);
+$('#waMedida').href = waLink(`Hola! Quiero que me diseñen y fabriquen unas botas en cuero 🥾\nTengo esta idea / referencia: (te envío la foto)`);
+
+/* bota dibujada (se usa cuando aún no hay foto) */
+function bota(color, alto=34){
+  const t = alto;
+  return `<svg viewBox="0 0 210 222" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g${color.slice(1)}${t}" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+    </defs>
+    <path d="M66 ${t} H130 L134 112 C152 120 190 128 196 160 V188 H70 Z" fill="${color}"/>
+    <path d="M66 ${t} H130 L134 112 C152 120 190 128 196 160 V188 H70 Z" fill="url(#g${color.slice(1)}${t})"/>
+    <rect x="64" y="${t}" width="68" height="13" rx="3" fill="#000" opacity=".25"/>
+    <path d="M74 ${t+22} V106" stroke="#F2E8D5" stroke-opacity=".6" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+    <path d="M152 132 C162 142 170 154 172 186" stroke="#F2E8D5" stroke-opacity=".55" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+    <path d="M98 118 q10 7 22 0 M96 128 q12 8 26 0" stroke="#000" stroke-opacity=".22" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M70 188 H198 V200 H70 Z" fill="#1b110a"/>
+    <path d="M70 200 H108 V218 H70 Z" fill="#120a05"/>
+    <path d="M70 188 H198" stroke="#FFE600" stroke-width="1.5" stroke-dasharray="4 3"/>
+  </svg>`;
+}
+document.getElementById('heroBoot').innerHTML = bota('#8a5430', 34);
+
+/* imagen del producto: prueba varias extensiones y, si no hay foto, dibuja la bota */
+function media(p, color){
+  const fb = bota(color, p.alto);
+  if(!p.img) return `<div class="m-fb">${fb}</div>`;
+  const conExt = /\.[a-zA-Z0-9]{3,4}$/.test(p.img);
+  const src = conExt ? p.img : p.img + '.' + EXTS[0];
+  return `<img class="m-img" src="${src}" ${conExt?'':`data-base="${p.img}" data-i="0"`} alt="${p.nombre}" loading="lazy" onerror="nextExt(this)"><div class="m-fb" style="display:none">${fb}</div>`;
+}
+
+/* ════════ ESTADO ════════ */
+let cat = 'Todas';
+let cart = [];   // [{pid, color, talla, qty}]
+let sel = null;
+
+$('#cats').innerHTML = CATEGORIAS.map(c=>`<button class="f ${c==='Todas'?'on':''}" data-c="${c}">${c}</button>`).join('');
+$('#cats').addEventListener('click', e=>{
+  const b = e.target.closest('.f'); if(!b) return;
+  cat = b.dataset.c;
+  document.querySelectorAll('.f').forEach(x=>x.classList.toggle('on', x===b));
+  render();
+});
+
+/* ════════ LISTA ════════ */
+function render(){
+  const lista = PRODUCTOS.filter(p => cat==='Todas' || p.cats.includes(cat));
+  $('#grid').innerHTML = lista.length ? lista.map((p,i)=>{
+    const c0 = CUEROS[p.cueros[0]].h;
+    return `<article class="prod" style="animation-delay:${i*40}ms" onclick="abrirProducto(${p.id})">
+      <div class="prod-img">
+        ${p.tag?`<span class="tag">${p.tag}</span>`:''}
+        ${media(p,c0)}
+        <div class="dots">${p.cueros.map(k=>`<i style="background:${CUEROS[k].h}"></i>`).join('')}</div>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">${p.cats[0]}</div>
+        <div class="prod-name">${p.nombre}</div>
+        <div class="prod-sub">${p.cueros.length} colores de cuero</div>
+        ${CONFIG.mostrarPrecios && p.precio ? `<div class="price">${cop(p.precio)}</div>`:''}
+        <button class="pick">Ver y elegir</button>
+      </div>
+    </article>`;
+  }).join('') : `<div class="empty">No encontramos botas en esta categoría.<br>Escríbenos por WhatsApp, seguro la hacemos.</div>`;
+}
+
+/* ════════ HOJA ════════ */
+function abrirOv(){ $('#toast').classList.remove('show'); $('#ov').classList.add('open'); document.body.style.overflow='hidden'; }
+function cerrarOv(){ $('#ov').classList.remove('open'); document.body.style.overflow=''; }
+$('#ov').addEventListener('click', e=>{ if(e.target.id==='ov') cerrarOv(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') cerrarOv(); });
+let toastT;
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('show'),1800); }
+
+const cuerosDe = p => p.cueros.map(k=>CUEROS[k]).concat([OTRO]);
+
+function abrirProducto(id){
+  sel = { pid:id, color:0, talla:null, qty:1 };
+  renderSheet(); abrirOv(); $('#sheet').scrollTop = 0;
+}
+function renderSheet(){
+  const p = PRODUCTOS[sel.pid];
+  const pal = cuerosDe(p);
+  const col = pal[sel.color];
+  const base = col.custom ? CUEROS[p.cueros[0]].h : col.h;
+  $('#sheet').innerHTML = `
+    <div class="grab"></div>
+    <button class="x" onclick="cerrarOv()" aria-label="Cerrar">✕</button>
+    <div class="s-img">
+      ${media(p, base)}
+      <span class="s-col"><i class="${col.custom?'dot-custom':''}" ${col.custom?'':`style="background:${col.h}"`}></i>${col.n}</span>
+    </div>
+    <div class="s-body">
+      <div class="prod-cat">${p.cats[0]}</div>
+      <h3 class="s-name">${p.nombre}</h3>
+      <p class="s-desc">${p.desc}</p>
+      <div class="feat">${p.feat.map(f=>`<span>${f}</span>`).join('')}</div>
+      ${CONFIG.mostrarPrecios && p.precio ? `<div class="price" style="font-size:22px;margin-top:12px">${cop(p.precio)}</div>`:''}
+
+      <div class="s-lbl">Color del cuero <b>${col.n}</b></div>
+      <div class="swatches">${pal.map((c,i)=>`<button class="sw ${c.custom?'sw-custom':''} ${i===sel.color?'on':''}" ${c.custom?'':`style="background:${c.h}"`} onclick="pickColor(${i})" aria-label="${c.n}" title="${c.n}">${c.custom?'<span>🎨</span>':''}</button>`).join('')}</div>
+      ${col.custom?`<div class="s-custom">🎨 <b>Otro color.</b> Al enviar tu pedido te preguntaremos por WhatsApp qué color o tono de cuero quieres (puedes mandarnos una foto de referencia).</div>`:''}
+
+      <div class="s-lbl">Talla <b>${sel.talla?sel.talla:'Elige la tuya'}</b></div>
+      <div class="tallas">${p.tallas.map(t=>`<button class="t ${t===sel.talla?'on':''}" onclick="pickTalla('${t}')">${t}</button>`).join('')}</div>
+      <p class="s-hint">¿No encuentras tu talla o la quieres a medida? Escríbenos y la fabricamos.</p>
+
+      <div class="s-foot">
+        <div class="qstep"><button onclick="qtySel(-1)">−</button><b>${sel.qty}</b><button onclick="qtySel(1)">+</button></div>
+        <button class="btn btn-oro add-btn" onclick="addSel()">Agregar a mi pedido</button>
+      </div>
+    </div>`;
+}
+function pickColor(i){ sel.color = i; const y=$('#sheet').scrollTop; renderSheet(); $('#sheet').scrollTop=y; }
+function pickTalla(t){ sel.talla = t; const y=$('#sheet').scrollTop; renderSheet(); $('#sheet').scrollTop=y; }
+function qtySel(d){ sel.qty = Math.max(1, Math.min(20, sel.qty+d)); const y=$('#sheet').scrollTop; renderSheet(); $('#sheet').scrollTop=y; }
+function addSel(){
+  if(!sel.talla){ toast('Elige tu talla primero'); return; }
+  const ex = cart.find(l=>l.pid===sel.pid && l.color===sel.color && l.talla===sel.talla);
+  if(ex) ex.qty += sel.qty; else cart.push({...sel});
+  cerrarOv(); actualizarCarrito(); toast('✓ Agregado a tu pedido');
+}
+
+/* ════════ PEDIDO ════════ */
+const colorDe = l => cuerosDe(PRODUCTOS[l.pid])[l.color];
+function mensaje(){
+  const lineas = cart.map(l=>{
+    const p = PRODUCTOS[l.pid], c = colorDe(l);
+    return `• ${l.qty} x ${p.nombre} — ${c.custom?'Color a elegir (te envío referencia)':c.n} — Talla ${l.talla}`;
+  }).join('\n');
+  return `Hola! Quiero hacer este pedido de ${CONFIG.negocio} 🥾\n\n${lineas}\n\n¿Me confirman disponibilidad, precio y tiempo de entrega? Gracias 🙌`;
+}
+function actualizarCarrito(){
+  const u = cart.reduce((a,l)=>a+l.qty,0);
+  $('#cartbar').classList.toggle('show', u>0);
+  $('#cartCount').textContent = u + (u===1?' par':' pares') + ' · ver';
+  if(u>0) $('#cartSend').href = waLink(mensaje());
+}
+function abrirCarrito(){ if(!cart.length) return; renderCarrito(); abrirOv(); $('#sheet').scrollTop = 0; }
+function renderCarrito(){
+  $('#sheet').innerHTML = `
+    <div class="grab"></div>
+    <button class="x" onclick="cerrarOv()" aria-label="Cerrar">✕</button>
+    <div class="c-title">Tu pedido</div>
+    <div class="c-list">${cart.map((l,i)=>{
+      const p = PRODUCTOS[l.pid], c = colorDe(l);
+      return `<div class="cl">
+        <div class="cl-dot ${c.custom?'dot-custom':''}" ${c.custom?'':`style="background:${c.h}"`}></div>
+        <div class="cl-info"><b>${p.nombre}</b><small>${c.n} · Talla ${l.talla}</small></div>
+        <div class="qty"><button onclick="cambiarLinea(${i},-1)">−</button><b>${l.qty}</b><button onclick="cambiarLinea(${i},1)">+</button></div>
+        <button class="cl-del" onclick="quitarLinea(${i})" aria-label="Quitar">🗑️</button>
+      </div>`;
+    }).join('')}</div>
+    <div class="c-foot">
+      <a class="btn btn-wa" style="width:100%;padding:16px" target="_blank" rel="noopener" href="${waLink(mensaje())}">📲 Enviar pedido por WhatsApp</a>
+      <div class="fine">Te respondemos por WhatsApp con disponibilidad, precio y tiempo de entrega.</div>
+    </div>`;
+}
+function cambiarLinea(i,d){ cart[i].qty += d; if(cart[i].qty<=0) cart.splice(i,1); actualizarCarrito(); if(!cart.length){ cerrarOv(); return; } renderCarrito(); }
+function quitarLinea(i){ cart.splice(i,1); actualizarCarrito(); if(!cart.length){ cerrarOv(); return; } renderCarrito(); }
+
+render(); actualizarCarrito();
+
+/* ════════ NAV ACTIVO ════════ */
+const secs = ['inicio','botas','medida','contacto'].map(id=>document.getElementById(id));
+const links = [...document.querySelectorAll('#nav a')];
+addEventListener('scroll', ()=>{
+  let act = 0;
+  secs.forEach((s,i)=>{ if(s.getBoundingClientRect().top < innerHeight*0.4) act = i; });
+  links.forEach((l,i)=>l.classList.toggle('on', i===act));
+}, {passive:true});
+</script>
+</body>
+</html>
